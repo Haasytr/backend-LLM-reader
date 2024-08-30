@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  pg:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=postgres
+  server:
+    container_name: server
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000

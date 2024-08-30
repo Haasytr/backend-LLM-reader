@@ -1,0 +1,30 @@
+{
+  "name": "backs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "test:watch": "vitest --dir src/use-cases"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.5.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "dependencies": {
+    "@fastify/multipart": "^8.3.0",
+    "@google/generative-ai": "^0.17.1",
+    "@prisma/client": "^5.19.0",
+    "date-fns": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.28.1",
+    "js-base64": "^3.7.7",
+    "prisma": "^5.19.0",
+    "zod": "^3.23.8"
+  }
+}
