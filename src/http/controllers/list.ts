@@ -20,7 +20,7 @@ export async function list(req: FastifyRequest, res: FastifyReply) {
   try {
     const { measures } = await confirmMeasureUseCase.execute({
       id: customer_code,
-      param: measure_type,
+      param: measure_type?.toUpperCase(),
     });
 
     return res.status(200).send({ customer_code: customer_code, measures });
